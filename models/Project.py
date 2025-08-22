@@ -1,6 +1,7 @@
 
 class ProjectClass:
-    def __init__(self, title, keywords=None, bulletpoints=None):
+    def __init__(self, title, id=None, keywords=None, bulletpoints=None):
+        self.id = id
         self.title = title
         self.keywords = set(keywords) if keywords else set()
         # self.bulletpoint_list = bulletpoints or []

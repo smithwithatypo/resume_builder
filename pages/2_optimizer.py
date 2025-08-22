@@ -1,5 +1,5 @@
 import streamlit as st
-# import data.projects
+from data.projects import all_projects 
 
 
 # search = "ux"
@@ -15,4 +15,7 @@ import streamlit as st
 
 if "job_description_keywords" in st.session_state:
     data = st.session_state.job_description_keywords
-    st.write(data)
+    st.write("data loaded: ", len(data))
+
+for project in all_projects:
+    print( (project.keywords, project.id) )

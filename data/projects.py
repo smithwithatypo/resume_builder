@@ -1,10 +1,14 @@
 from models.Project import ProjectClass
 from models.BulletPoint import BulletPointClass
 
+# export
+all_projects = set()
+
 
 # Template
 '''
 project_name = ProjectClass(
+    id=1,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -16,14 +20,15 @@ project_name = ProjectClass(
         ),
     ]
 )
+all_projects.add(project_name)
+
 '''
-
-
 
 
 # Dell projects ##############################################################
 
 dell_ai_automation = ProjectClass(
+    id=1,
     title="AI automation",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -36,8 +41,10 @@ dell_ai_automation = ProjectClass(
 
     ]
 )
+all_projects.add(dell_ai_automation)
 
 dell_survey_analysis = ProjectClass(
+    id=2,
     title="Survey analysis",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -49,8 +56,11 @@ dell_survey_analysis = ProjectClass(
         ),
     ]
 )
+all_projects.add(dell_survey_analysis)
+
 
 dell_order_lookup = ProjectClass(
+    id=3,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -62,8 +72,10 @@ dell_order_lookup = ProjectClass(
         ),
     ]
 )
+all_projects.add(dell_order_lookup)
 
 dell_python_script = ProjectClass(
+    id=4,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -75,8 +87,11 @@ dell_python_script = ProjectClass(
         ),
     ]
 )
+all_projects.add(dell_python_script)
+
 
 dell_hackathon = ProjectClass(
+    id=5,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -88,6 +103,8 @@ dell_hackathon = ProjectClass(
         ),
     ]
 )
+all_projects.add(dell_hackathon)
+
 
 
 
@@ -95,6 +112,7 @@ dell_hackathon = ProjectClass(
 # Research projects ##########################################################
 
 research_aita = ProjectClass(
+    id=6,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -106,8 +124,11 @@ research_aita = ProjectClass(
         ),
     ]
 )
+all_projects.add(research_aita)
+
 
 research_mow = ProjectClass(
+    id=7,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -119,8 +140,11 @@ research_mow = ProjectClass(
         ),
     ]
 )
+all_projects.add(research_mow)
+
 
 research_imics = ProjectClass(
+    id=8,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -132,8 +156,11 @@ research_imics = ProjectClass(
         ),
     ]
 )
+all_projects.add(research_imics)
+
 
 research_aquaponic = ProjectClass(
+    id=9,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -145,12 +172,14 @@ research_aquaponic = ProjectClass(
         ),
     ]
 )
+all_projects.add(research_aquaponic)
 
 
 
 # Extracurricular projects ##########################################################
 
 teaching_assistant = ProjectClass(
+    id=10,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -162,8 +191,10 @@ teaching_assistant = ProjectClass(
         ),
     ]
 )
+all_projects.add(teaching_assistant)
 
 gdsc = ProjectClass(
+    id=11,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -175,8 +206,10 @@ gdsc = ProjectClass(
         ),
     ]
 )
+all_projects.add(gdsc)
 
 ieee = ProjectClass(
+    id=12,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -188,11 +221,13 @@ ieee = ProjectClass(
         ),
     ]
 )
+all_projects.add(ieee)
 
 
 # Apple projects ##########################################################
 
 apple = ProjectClass(
+    id=13,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -204,6 +239,7 @@ apple = ProjectClass(
         ),
     ]
 )
+all_projects.add(apple)
 
 
 
@@ -215,6 +251,7 @@ apple = ProjectClass(
 # Personal projects ##########################################################
 
 french_with_ai = ProjectClass(
+    id=14,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -226,8 +263,10 @@ french_with_ai = ProjectClass(
         ),
     ]
 )
+all_projects.add(french_with_ai)
 
 bulk_prompts = ProjectClass(
+    id=15,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -239,8 +278,10 @@ bulk_prompts = ProjectClass(
         ),
     ]
 )
+all_projects.add(bulk_prompts)
 
 learn_docker = ProjectClass(
+    id=16,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -252,8 +293,10 @@ learn_docker = ProjectClass(
         ),
     ]
 )
+all_projects.add(learn_docker)
 
 computersmyth = ProjectClass(
+    id=17,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -265,8 +308,10 @@ computersmyth = ProjectClass(
         ),
     ]
 )
+all_projects.add(computersmyth)
 
 resume_builder = ProjectClass(
+    id=18,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -278,8 +323,10 @@ resume_builder = ProjectClass(
         ),
     ]
 )
+all_projects.add(resume_builder)
 
 algo_training = ProjectClass(
+    id=19,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -291,8 +338,10 @@ algo_training = ProjectClass(
         ),
     ]
 )
+all_projects.add(algo_training)
 
 python_algo_snippets = ProjectClass(
+    id=20,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -304,8 +353,10 @@ python_algo_snippets = ProjectClass(
         ),
     ]
 )
+all_projects.add(python_algo_snippets)
 
 txst_cs_student_guide = ProjectClass(
+    id=21,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -317,8 +368,10 @@ txst_cs_student_guide = ProjectClass(
         ),
     ]
 )
+all_projects.add(txst_cs_student_guide)
 
 project_prioritizer = ProjectClass(
+    id=22,
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -330,3 +383,4 @@ project_prioritizer = ProjectClass(
         ),
     ]
 )
+all_projects.add(project_prioritizer)
