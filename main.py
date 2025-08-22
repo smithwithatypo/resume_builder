@@ -13,8 +13,7 @@ model = init_chat_model("claude-sonnet-4-20250514", model_provider="anthropic")
 
 
 # prompt
-# system_template = str(me.items())
-system_template = "be a helpful assistant"
+system_template = "be a helpful assistant. summarize in one sentence."
 
 prompt_template = ChatPromptTemplate.from_messages(
     [("system", system_template), 
@@ -22,16 +21,16 @@ prompt_template = ChatPromptTemplate.from_messages(
 )
 
 
-# input
-user_text = "give me life advice.  summarize in 1 sentence"
-prompt = prompt_template.invoke({"text": user_text}) 
+user_text = st.text_area("text here", placeholder="Paste text here", height=300)
 
+if st.button("Generate response"):
+    if user_text:
+        prompt = prompt_template.invoke({"text": user_text}) 
 
-# output
-response = model.invoke(prompt)
-output_text = response.content
+        response = model.invoke(prompt)
+        output_text = response.content
 
-# print("wrote response to output.txt")
-print("output with print: ", output_text)
-st.write("output with st.write: ", output_text)
-st.write("skills are", skills)
+        st.write(output_text)
+    else:
+        st.warning("Please enter some text first")
+
