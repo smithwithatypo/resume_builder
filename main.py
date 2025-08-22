@@ -21,7 +21,7 @@ prompt_template = ChatPromptTemplate.from_messages(
 )
 
 
-user_text = st.text_area("text here", placeholder="Paste text here", height=300)
+user_text = st.text_area("text here", placeholder="Paste text here", height=300, key="main")
 
 if st.button("Generate response"):
     if user_text:

@@ -2,7 +2,7 @@ from models.Project import ProjectClass
 from models.BulletPoint import BulletPointClass
 
 
-# Template for bullet points
+# Template
 '''
 project_name = ProjectClass(
     title="",
@@ -21,28 +21,36 @@ project_name = ProjectClass(
 
 
 
-# Professional Projects ------------------------------------------------------
-dell_2024 = ProjectClass(
-    title="AI legal review automation",
+# Dell projects ##############################################################
+
+dell_ai_automation = ProjectClass(
+    title="AI automation",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
         BulletPointClass(
-            result="automated the legal review process of SOW contract negotiations for $2.4B global enterprise sales pipeline",
-            metric="saved 7 hours of manual effort per week per sales agent",
-            action="by researching viability, then developing and deploying an AI / NLP app with Python, Streamlit, and a large language model on an internal Kubernetes cluster",
-            keywords=("ai", "llm", "python", "kubernetes", "docker", "automation")
-        ),
-        BulletPointClass(
-            result="",
-            metric="",
-            action="",
-            keywords=("ai", "llm", "python", "kubernetes", "docker", "automation")
+            result="automated legal review process of SOW contract negotiations for $2.4B enterprise sales pipeline",
+            metric="saved 7 hours/week/salesperson",
+            action="by designing, developing, and deploying an AI / NLP app on an internal Kubernetes cluster.",
+            keywords=("ai", "llm", "nlp", "python", "kubernetes", "docker", "automation")
         ),
 
     ]
 )
 
-dell_2023 = ProjectClass(
+dell_survey_analysis = ProjectClass(
+    title="Survey analysis",
+    keywords=("ai", "llm", "python"),
+    bulletpoints=[
+        BulletPointClass(
+            result="Business and developers improved user experience through app enhancements (auto-population features and increased speed)",
+            metric="80 enterprise sales agent surveys analyzed",
+            action="Analyzed unstructured survey data from internal app using NLP and manual review",
+            keywords=("nlp", "ux", "python")
+        ),
+    ]
+)
+
+dell_order_lookup = ProjectClass(
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -55,7 +63,7 @@ dell_2023 = ProjectClass(
     ]
 )
 
-dell_2022 = ProjectClass(
+dell_python_script = ProjectClass(
     title="",
     keywords=("ai", "llm", "python"),
     bulletpoints=[
@@ -67,6 +75,24 @@ dell_2022 = ProjectClass(
         ),
     ]
 )
+
+dell_hackathon = ProjectClass(
+    title="",
+    keywords=("ai", "llm", "python"),
+    bulletpoints=[
+        BulletPointClass(
+            result="",
+            metric="",
+            action="",
+            keywords=("ai", "llm", "python", "kubernetes", "docker", "automation")
+        ),
+    ]
+)
+
+
+
+
+# Research projects ##########################################################
 
 research_aita = ProjectClass(
     title="",
@@ -120,6 +146,10 @@ research_aquaponic = ProjectClass(
     ]
 )
 
+
+
+# Extracurricular projects ##########################################################
+
 teaching_assistant = ProjectClass(
     title="",
     keywords=("ai", "llm", "python"),
@@ -159,6 +189,9 @@ ieee = ProjectClass(
     ]
 )
 
+
+# Apple projects ##########################################################
+
 apple = ProjectClass(
     title="",
     keywords=("ai", "llm", "python"),
@@ -179,7 +212,8 @@ apple = ProjectClass(
 
 
 
-# Personal Projects ----------------------------------------------------------
+# Personal projects ##########################################################
+
 french_with_ai = ProjectClass(
     title="",
     keywords=("ai", "llm", "python"),

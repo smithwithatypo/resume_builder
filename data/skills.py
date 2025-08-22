@@ -5,7 +5,7 @@ skills_list = [
 "Java",
 "Go",
 "C++",
-"C#",
+"C# .NET",
 "Bash",
 "Perl",
 "React",
