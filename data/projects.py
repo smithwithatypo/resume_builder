@@ -30,13 +30,13 @@ all_projects.add(project_name)
 dell_ai_automation = ProjectClass(
     id=1,
     title="AI automation",
-    keywords=("ai", "llm", "python"),
+    keywords=("ai", "llm", "python", "streamlit", "kubernetes", "docker"),
     bulletpoints=[
         BulletPointClass(
             result="automated legal review process of SOW contract negotiations for $2.4B enterprise sales pipeline",
             metric="saved 7 hours/week/salesperson",
             action="by designing, developing, and deploying an AI / NLP app on an internal Kubernetes cluster.",
-            keywords=("ai", "llm", "nlp", "python", "kubernetes", "docker", "automation")
+            keywords=("ai", "llm", "python", "kubernetes", "docker", "streamlit")
         ),
 
     ]
@@ -46,7 +46,7 @@ all_projects.add(dell_ai_automation)
 dell_survey_analysis = ProjectClass(
     id=2,
     title="Survey analysis",
-    keywords=("ai", "llm", "python"),
+    keywords=("nlp", "ux", "python"),
     bulletpoints=[
         BulletPointClass(
             result="Business and developers improved user experience through app enhancements (auto-population features and increased speed)",
