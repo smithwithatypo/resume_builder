@@ -122,7 +122,7 @@ all_projects.add(dell_hackathon)
 
 research_aita = ProjectClass(
     id=6,
-    title="ai computer science tutor",
+    title="AI computer science tutor",
     keywords=("ai", "llm", "angular", "node.js", "full-stack development", "agile", "ci / cd"),
     bulletpoints=[
         BulletPointClass(
@@ -142,13 +142,18 @@ all_projects.add(research_aita)
 
 research_mow = ProjectClass(
     id=7,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="Mobile app for Meals on Wheels",
+    keywords=("react native", "django", "python", "full-stack development", "agile", "git", "leadership", "code reviews"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="delivered user-facing features for elderly nutrition platform",
+            metric="served 5000 seniors in central texas through a $5M federally-funded project",
+            action="by coordinating and mentoring a cross-functional team of frontend and backend engineers",
+        ),
+        BulletPointClass(
+            result="Improved code quality and team velocity",
+            metric="by conducting 50+ code reviews",
+            action="by implementing Agile project management, mentoring 2 engineers in Git workflows, and translating stakeholder requirements into technical specifications",
         ),
     ]
 )
@@ -157,13 +162,13 @@ all_projects.add(research_mow)
 
 research_imics = ProjectClass(
     id=8,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="medical computer vision",
+    keywords=("ai", "deep learning", "python", "tensorflow", "machine learning", "automation", "distributed computing", "computer vision"),
     bulletpoints=[
         BulletPointClass(
-            result="",
+            result="Automated a data augmentation pipeline for medical computer vision research",
             metric="",
-            action="",
+            action="by building a distributed infrastructure across 8 GPUs training custom convolutional neural networks from scratch using Tensorflow",
         ),
     ]
 )
