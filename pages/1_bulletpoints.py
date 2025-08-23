@@ -23,8 +23,7 @@ radio_options = {
     },
     1: {
         "title": "Sections from my explanation",
-        "prompt": "please extract a Result (separate from metric), metric, action, and some keywords that would match ATS from this explanation of what I did: {explanation}"
-       
+        "prompt": "please extract a Result (like impact on user or developers), Metric (measurable impact of the result), Action (specific action I took), and some keywords that would match ATS from this explanation of what I did: {explanation}"
     },
 }
 
@@ -51,7 +50,9 @@ if st.button("Generate response"):
             user_input = radio_options[1]["prompt"].format(explanation=explanation)
         
         prompt = prompt_template.invoke({"text": user_input}) 
+        print("about to call ai")
         response = model.invoke(prompt)
+        print("finished calling ai")
         output_text = response.content
 
         st.write(output_text)
