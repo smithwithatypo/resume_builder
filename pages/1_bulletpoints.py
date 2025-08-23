@@ -23,7 +23,7 @@ radio_options = {
     },
     1: {
         "title": "Sections from my explanation",
-        "prompt": "please extract a Result, Metric, Action, and some keywords that would match ATS from this explanation of what I did: {explanation}"
+        "prompt": "please extract a Result (separate from metric), metric, action, and some keywords that would match ATS from this explanation of what I did: {explanation}"
        
     },
 }
@@ -43,6 +43,7 @@ elif generation_option == radio_options[1]["title"]:
 
 
 if st.button("Generate response"):
+    # print("button pressed")
     if result or metric or action or explanation:
         if generation_option == radio_options[0]["title"]:
             user_input = radio_options[0]["prompt"].format(result=result, metric=metric, action=action)

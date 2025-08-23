@@ -7,6 +7,7 @@ from util.format_for_llm import format_projects_for_llm
 
 # run Summarizer first to populate session_state
 if "job_description_keywords" in st.session_state:
+    st.info("job description keywords successfully loaded from Summarizer")
     job_keywords = st.session_state.job_description_keywords
     projects_string = format_projects_for_llm(all_projects)
     
@@ -45,13 +46,15 @@ Please rank and analyze the most relevant projects for this role.""")
     
     if st.button("run model"):
         response = model.invoke(prompt)
-        st.header("job keywords")
-        st.write(job_keywords)
 
-        st.header("projects string")
-        st.write(projects_string)
-        
-        st.header("ai response")
+        st.header("AI response")
         st.write(response.content)
+
+        with st.expander("job keywords"):
+            st.write(job_keywords)
+
+        with st.expander("projects string"):
+            st.write(projects_string)
+
 else:
     st.warning("Please enter a job description on the Summarizer page first")
