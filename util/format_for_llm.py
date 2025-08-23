@@ -14,7 +14,6 @@ BULLET POINTS:
   • RESULT: {bp.result}
   • METRIC: {bp.metric}
   • ACTION: {bp.action}
-  • KEYWORDS: {', '.join(bp.keywords)}
   ---
 """
         formatted_projects.add(project_text)
