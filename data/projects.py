@@ -177,13 +177,18 @@ all_projects.add(research_imics)
 
 research_aquaponic = ProjectClass(
     id=9,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="aquaponic farm automation",
+    keywords=("iot", "system architecture", "python", "distributed systems", "fault tolerance", "automation", "cloud", "reliability", "cross-functional collaboration", "risk analysis"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Eliminated single point of failure crashes that previously brought down entire farm",
+            metric=r"Improved system reliability from 0% fault tolerance to resilient multi-node operation supporting 40+ plants and dozens of fish",
+            action="Redesigned raspberry pi network architecture from daisy-chain to fault-tolerant client/server system",
+        ),
+        BulletPointClass(
+            result="Identified high-risk subsystems and implemented targeted risk mitigations",
+            metric="Co-authored peer-reviewed publication with graduate student",
+            action="Published research on FMEA and Digital Twin methodologies for complex system risk analysis",
         ),
     ]
 )
@@ -199,9 +204,14 @@ teaching_assistant = ProjectClass(
     keywords=("ai", "llm", "python"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Enhanced student understanding of production-ready software development practices",
+            metric="80 students across 2 semesters",
+            action="Taught full-stack software engineering principles and conducted code reviews for student projects",
+        ),
+        BulletPointClass(
+            result="Improved grading workflow and consistency",
+            metric="by 60% (15+ hours per assignment cycle)",
+            action="by developing an automated unit testing framework to grade assignments",
         ),
     ]
 )
