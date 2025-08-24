@@ -219,13 +219,18 @@ all_projects.add(teaching_assistant)
 
 gdsc = ProjectClass(
     id=11,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="google club",
+    keywords=("machine learning", "cloud computer", "leadership", "data-driven", "app development", "project management"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Founded and scaled a computer science club with Google",
+            metric="grew from 0 to 400+ members within a year",
+            action="by recruiting 10 officers and leading workshops in modern software skills like machine learning, cloud, app development, and interview prep",
+        ),
+        BulletPointClass(
+            result="improved student retention and industry readiness",
+            metric="as measured by positive survey sentiments after 40 events, 2 hackathons, a Google campus visit, and a freshman orientation with 300 attendees",
+            action="by leading 40+ technical and social events events in a year",
         ),
     ]
 )
@@ -233,13 +238,13 @@ all_projects.add(gdsc)
 
 ieee = ProjectClass(
     id=12,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="ieee club",
+    keywords=("leadership", "project management", "team management", "technical education"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="boosted student engagement and education",
+            metric="with 20-70 weekly attendees, 7 robotics teams, and increased organizational funds by 17% (from $6k to $7k)",
+            action="by leading a team of 17 officers to create weekly technical, social, and fundraising events",
         ),
     ]
 )
@@ -248,19 +253,47 @@ all_projects.add(ieee)
 
 # Apple projects ##########################################################
 
-apple = ProjectClass(
-    id=13,
-    title="",
-    keywords=("ai", "llm", "python"),
+fraud_investigator = ProjectClass(
+    id=25,
+    title="fraud investigator",
+    keywords=("risk management", "data analysis", "process optimization", "quality assurance"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Mitigated financial risk to the company and customers",
+            metric="saving $1 billion of damages annually",
+            action=r"by actioning 50+ cases daily at over 99% accuracy and training all the teams of North America",
         ),
     ]
 )
-all_projects.add(apple)
+all_projects.add(fraud_investigator)
+
+tribal_knowledge = ProjectClass(
+    id=26,
+    title="tribal knowledge",
+    keywords=("process optimization", "risk mitigation", "cross-functional leadership", "project management"),
+    bulletpoints=[
+        BulletPointClass(
+            result="Solved leadership's biggest struggle",
+            metric="for 140 team members teaching 40 productivity optimizations",
+            action="by creating a database of tribal knowledge while mitigating the risk of this data being useful to any criminals who might gain access to it",
+        ),
+    ]
+)
+all_projects.add(tribal_knowledge)
+
+apple_leadership = ProjectClass(
+    id=27,
+    title="program manager at apple",
+    keywords=("program management", "cross-functional collaboration", "process optimization", "stakeholder engagement"),
+    bulletpoints=[
+        BulletPointClass(
+            result="improved employee engagement and corporate giving",
+            metric="engaging 1200+ unique employees",
+            action="by organizing 250 community service events across 3 years",
+        ),
+    ]
+)
+all_projects.add(apple_leadership)
 
 
 
@@ -273,41 +306,27 @@ all_projects.add(apple)
 
 french_with_ai = ProjectClass(
     id=14,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="french with ai",
+    keywords=("ai", "Full-stack development", "Golang", "react", "ci/cd pipeline"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="improved the experience of learning French",
+            metric="by saving an average 20 minutes of lookup time per 1 hour of studying",
+            action="by developing a full-stack AI-powered app using Go, React, generative AI, and Docker with an automated CI/CD pipeline deployment on Railway",
         ),
     ]
 )
 all_projects.add(french_with_ai)
 
-bulk_prompts = ProjectClass(
-    id=15,
-    title="",
-    keywords=("ai", "llm", "python"),
-    bulletpoints=[
-        BulletPointClass(
-            result="",
-            metric="",
-            action="",
-        ),
-    ]
-)
-all_projects.add(bulk_prompts)
-
 learn_docker = ProjectClass(
     id=16,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="learn docker",
+    keywords=("docker", "database", "container orchestration"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="learned nuanced Docker networking and security",
+            metric="reducing risk of bringing down production by 100%",
+            action="by developing a Docker playground environment with multi-container architecture including frontend, backend, database services, and environment variables",
         ),
     ]
 )
@@ -315,13 +334,13 @@ all_projects.add(learn_docker)
 
 computersmyth = ProjectClass(
     id=17,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="computersmyth",
+    keywords=("Web Development", "Open Source", "mentoring"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Increased access to computer science resources",
+            metric="of 10+ apps, coding templates, and tutorials for full-stack software development",
+            action="by creating a web platform for developers to freely access everything I've published",
         ),
     ]
 )
@@ -330,40 +349,40 @@ all_projects.add(computersmyth)
 resume_builder = ProjectClass(
     id=18,
     title="",
-    keywords=("ai", "llm", "python"),
+    keywords=("ai", "llm", "python", "streamlit"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="reduced the time it takes to customize resumes for each job opening",
+            metric="by 2+ hours per application",
+            action="by coding a full-stack app that uses large language models to synthesize keywords from the job description, then references a list of all my projects with keywords, then ranks which projects are most relevant to this specific position",
         ),
     ]
 )
 all_projects.add(resume_builder)
 
-algo_training = ProjectClass(
-    id=19,
-    title="",
-    keywords=("ai", "llm", "python"),
-    bulletpoints=[
-        BulletPointClass(
-            result="",
-            metric="",
-            action="",
-        ),
-    ]
-)
-all_projects.add(algo_training)
+# algo_training = ProjectClass(
+#     id=19,
+#     title="",
+#     keywords=("ai", "llm", "python"),
+#     bulletpoints=[
+#         BulletPointClass(
+#             result="",
+#             metric="",
+#             action="",
+#         ),
+#     ]
+# )
+# all_projects.add(algo_training)
 
 python_algo_snippets = ProjectClass(
     id=20,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="python algorithm snippets",
+    keywords=("python", "angular", "algorithms", "data structures"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Reduced the study time of advanced data structures and algorithms",
+            metric="by 20% (estimated)",
+            action="by developing and deploying an app that collects the most useful Python code snippets and makes them easily searchable using a filter and keywords.",
         ),
     ]
 )
@@ -371,13 +390,13 @@ all_projects.add(python_algo_snippets)
 
 txst_cs_student_guide = ProjectClass(
     id=21,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="txst cs student guide",
+    keywords=("angular", "react", "education", "web development"),
     bulletpoints=[
         BulletPointClass(
-            result="",
-            metric="",
-            action="",
+            result="Increased access to educational resources to underprivileged students",
+            metric="engaging 100+ CS students at my university",
+            action="by developing an app that linked to 40+ free online tools that upper-classmen, professors, and professionals found most useful in their success journeys",
         ),
     ]
 )
@@ -385,13 +404,13 @@ all_projects.add(txst_cs_student_guide)
 
 project_prioritizer = ProjectClass(
     id=22,
-    title="",
-    keywords=("ai", "llm", "python"),
+    title="project prioritizer",
+    keywords=("angular", "prioritization", "process optimization"),
     bulletpoints=[
         BulletPointClass(
-            result="",
+            result="Reduced decision fatigue and time-to-action for people with multiple competing projects",
             metric="",
-            action="",
+            action="by coding a lightweight app that uses the Eisenhower Matrix to rank all your projects in order of highest priority and gives you a clear actionable step for each project",
         ),
     ]
 )
